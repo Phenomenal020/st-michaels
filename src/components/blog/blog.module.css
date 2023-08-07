@@ -1,0 +1,79 @@
+.container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  background-color: #213464;
+}
+
+.headerText {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  font-weight: 600;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.paraText {
+  width: 90%;
+  text-align: center;
+  line-height: 1.25;
+  margin-bottom: 1em;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.cardWrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.btnSmall {
+  width: 40%;
+  margin: 1em 0px;
+  font-size: 0.875rem;
+  color: #568263;
+  padding-left: 0px !important;
+  text-transform: capitalize;
+  font-weight: normal;
+  padding: 0.625em;
+  border-radius: 0.25em;
+  background-color: transparent;
+  border: 0.2px solid #242540 !important;
+  cursor: pointer;
+}
+
+.visitBlogBtn {
+  font-size: 1rem;
+  padding: 1em;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: 0.5px solid #ddd !important;
+  margin: 1em 0px;
+  color: #ddd;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 0.25em;
+  transition: 0.3s all ease-out;
+}
+
+.visitBlogBtn:hover {
+  color: #213464;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .cardWrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .5em;
+  }
+}

@@ -1,0 +1,138 @@
+.container {
+  background-color: #1d1d1d;
+  padding: 1em;
+  max-width: 100vw;
+}
+
+.top {
+  text-align: center;
+  margin: 0.5em auto;
+}
+
+.mid {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.contactInfo {
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1.25;
+  width: 100%;
+  margin-bottom: 1.25em;
+}
+
+.address,
+.phone,
+.email {
+  margin: 0.2em 0px;
+}
+
+.siteNavWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  margin-bottom: 1.25em;
+}
+
+.info {
+  display: inline-block;
+  width: fit-content;
+}
+
+.getInTouch,
+.linkHeader {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #fff;
+  line-height: 1.25;
+}
+
+.linkHeader {
+  line-height: 1.25;
+  text-transform: capitalize;
+  margin: 0.3em 0em;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+  color: #f9f9f9;
+  font-size: 0.875rem;
+}
+
+.copyRight {
+  flex: 2;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0.5em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.devWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: flex-end;
+  text-decoration: underline;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    padding: 1.5;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .container {
+    padding: 2em;
+  }
+
+  .siteNavWrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .info {
+    align-self: flex-start;
+    padding-left: 0.75em;
+    border-left: 1px solid #ddd;
+    margin-bottom: 0.2em;
+  }
+
+  .linkHeader {
+    margin: 0.2em 0em;
+  }
+}
+
+/* @media screen and (min-width: 992px) {
+  .container {
+    padding: 3em;
+  }
+
+  .mid {
+    flex-direction: row;
+  }
+
+  .siteNavWrapper {
+    display: flex;
+    flex: 1;
+  }
+
+  .info {
+    width: fit-content;
+  }
+
+  .getInTouch:last-of-type {
+    display: none;
+  }
+} */

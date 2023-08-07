@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+  max-width: 100vw;
+  height: 33vh;
+  background-image: url("/images/admission-process.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+      0deg,
+      rgba(37, 59, 115, 0.6),
+      rgba(37, 59, 115, 0.6)
+    ),
+    linear-gradient(0deg, rgba(37, 59, 115, 0.3), rgba(37, 59, 115, 0.3));
+}
+
+.headerText {
+  font-size: 1.5rem;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  text-transform: uppercase;
+  text-align: center;
+}

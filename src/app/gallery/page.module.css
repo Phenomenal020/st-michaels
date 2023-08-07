@@ -1,0 +1,58 @@
+.container {
+  max-width: 100vw;
+  height: fit-content;
+  background-color: #e3eeff;
+  padding: 1em;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 2.5em;
+}
+
+.imgWrapper {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  margin-bottom: 1.25em;
+}
+
+.subHeader {
+  text-align: center;
+  margin: .5em auto;
+  font-weight: bold;
+  font-size: .925rem;
+  text-transform: uppercase;
+}
+
+.paraText {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media screen  and (min-width: 767px){
+  .container {
+    padding: 2em;
+  }
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+}
+
+@media screen  and (min-width: 992px){
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+  }
+}

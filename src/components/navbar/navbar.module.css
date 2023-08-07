@@ -1,0 +1,210 @@
+.top {
+  background-color: #1b3167d9;
+  padding: 0.5em 1em;
+  display: flex;
+  font-size: 0.75rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 100vw;
+  min-height: 5vh;
+}
+
+.phone,
+.email {
+  margin-right: 1.25em;
+  margin-bottom: 0.1em;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+}
+
+.container {
+  height: fit-content;
+  max-width: 100vw;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  min-height: 10vh;
+}
+
+.navInfoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.logoWrapper {
+  width: 2.5em;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+.logoImage {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.schoolNameWrapper {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  text-transform: uppercase;
+  margin-left: 0.5em;
+  justify-content: center;
+}
+
+.schoolName {
+  width: fit-content;
+  font-size: 0.875rem;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #1d1d1d;
+}
+
+.schoolLocation {
+  font-size: 0.75rem;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.linkWrapper {
+  gap: 2em;
+  font-weight: 600;
+  margin-right: 2em;
+  display: none;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #1d1d1d;
+  font-size: 0.875em;
+  line-height: 1.4;
+  transition: all 0.3s ease;
+  width: fit-content;
+  padding: 0.3em;
+}
+
+.navLink:hover {
+  color: #1b3167;
+  transform: scale(1.1);
+}
+
+/* ------------------ overlay -------------------- */
+
+.overlay {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 300px;
+  background-color: black;
+  z-index: 100;
+  padding: 1em;
+  padding-left: 2em;
+  font-size: 1.125rem;
+  justify-content: flex-end;
+  font-family: Inter, "sans-serif";
+}
+
+.closeIcon {
+  font-size: 1em;
+  color: #fff;
+  text-align: right;
+  cursor: pointer;
+}
+
+.overlayLinkWrapper {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlayLink {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1.25em;
+  font-weight: 500;
+  padding: 0.3em;
+}
+
+.hamburgerIcon {
+  font-size: 1em;
+}
+
+@media screen and (max-width: 360px) {
+  .schoolName {
+    font-size: 0.7rem;
+    margin-bottom: 0.1em;
+  }
+
+  .schoolLocation {
+    font-size: 0.6rem;
+  }
+
+  .logoWrapper {
+    width: 1.75em;
+  }
+
+  .hamburgerIcon {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 361px) and (max-width: 767px) {
+  .schoolName {
+    font-size: 0.8rem;
+    margin-bottom: 0.125em;
+  }
+
+  .schoolLocation {
+    font-size: 0.7rem;
+  }
+
+  .logoWrapper {
+    width: 1.75em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .top {
+    flex-direction: row;
+    padding-left: 1.25em;
+    gap: 0.25em;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.875rem;
+  }
+
+  .schoolName {
+    font-size: 1rem;
+    margin-bottom: 0.125em;
+  }
+
+  .schoolLocation {
+    font-size: 0.925rem;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .linkWrapper {
+    display: flex;
+  }
+
+  .hamburgerIcon {
+    font-size: 1.5em;
+  }
+}

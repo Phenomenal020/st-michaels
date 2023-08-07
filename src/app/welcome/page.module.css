@@ -1,0 +1,48 @@
+.container {
+  max-width: 100vw;
+  height: fit-content;
+  background-color: #e3eeff;
+  padding: 1em;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.midDiv {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  padding: 0.625em 0px;
+}
+
+.topImgWrapper {
+  width: 100%;
+  aspect-ratio: 7/3;
+  position: relative;
+}
+
+.welcomeText {
+  font-size: 1rem;
+  width: 100%;
+  font-weight: normal;
+  line-height: 1.25;
+}
+
+@media screen and (min-width: 600px) {
+  .topImgWrapper {
+    aspect-ratio: 6/3;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    padding: 2em;
+  }
+  .midDiv {
+    flex-direction: row;
+    align-items: center;
+  }
+  .topImgWrapper {
+    aspect-ratio: 3/3;
+  }
+}
