@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./testimonials.module.css";
 import { useEffect, useState } from "react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
-// 
+//
 type Props = {};
 
 interface imageIndices {
@@ -13,12 +13,12 @@ interface imageIndices {
 
 const Testimonials = (props: Props) => {
   const images: string[] = [
-    "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/4071709/pexels-photo-4071709.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    "https://images.pexels.com/photos/1937791/pexels-photo-1937791.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    "/images/testimonial001.jpeg",
+    "/images/testimonial002.jpg",
+    "/images/testimonial003.jpeg",
+    "/images/testimonial004.jpeg",
+    "/images/testimonial005.jpeg",
+    "/images/testimonial006.jpeg",
   ];
 
   const testimonials: string[] = [
@@ -77,14 +77,13 @@ const Testimonials = (props: Props) => {
 
   return (
     <section className={styles.container}>
-
       <div className={styles.topDiv}>
         <FaQuoteLeft className={styles.quoteIconLeft} size={36} color="#fff" />
         <div className={styles.quoteBox}>
           <p className={styles.quotesPara}> {testimonials[position.second]}</p>
         </div>
         <p className={styles.quoteAuthor}>Amarachi Ezenwaka</p>
-        <p  className={styles.quoteRole}>Mathematics Teacher</p>
+        <p className={styles.quoteRole}>Mathematics Teacher</p>
       </div>
 
       <div className={styles.wrapper}>

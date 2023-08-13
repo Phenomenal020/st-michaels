@@ -22,7 +22,7 @@ function page({}: Props) {
 
         <div className={styles.imageWrapper}>
           <Image
-            src="https://images.pexels.com/photos/5428002/pexels-photo-5428002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="/images/blogDetail01.jpg"
             fill={true}
             alt="image"
             className={styles.image}
@@ -65,7 +65,7 @@ function page({}: Props) {
         <h4 className={styles.relatedHeading}>related</h4>
         <div className={styles.cardWrapper}>
           {topPosts.map((post: Post) => (
-            <BlogCard post={post} />
+            <BlogCard post={post} key={Math.random() * 10000000} />
           ))}
         </div>
       </section>

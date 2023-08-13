@@ -8,9 +8,9 @@ import { useState } from "react";
 
 function Banner() {
   const [image, setImage] = useState<string[]>([
-    "https://images.pexels.com/photos/14554004/pexels-photo-14554004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/3231359/pexels-photo-3231359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/8382388/pexels-photo-8382388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "/images/banner001.jpeg",
+    "/images/banner002.jpeg",
+    "/images/banner003.jpeg",
   ]);
 
   const [currIndex, setCurrIndex] = useState<number>(1);

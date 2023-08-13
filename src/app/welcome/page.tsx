@@ -12,7 +12,7 @@ function page({}: Props) {
         <div className={styles.midDiv}>
           <div className={styles.topImgWrapper}>
             <Image
-              src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="/images/proprietress.jpg"
               alt="ict centre"
               fill={true}
               style={{ borderRadius: ".25em", objectFit: "cover" }}

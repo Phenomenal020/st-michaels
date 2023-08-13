@@ -16,7 +16,7 @@ function page({}: Props) {
           <div className={styles.contactDetails}>
             <div>
               <h4 className={styles.questionsHeader}>Have any Questions?</h4>
-              <p className={styles.happyText}>we're happy to hear from you</p>
+              <p className={styles.happyText}>we are happy to hear from you</p>
               <div className={styles.box}>
                 <h4 className={styles.boxHeader}>
                   <span>

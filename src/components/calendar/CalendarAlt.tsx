@@ -83,6 +83,7 @@ const CalendarAlt = () => {
               <div
                 className={styles.midToggle}
                 style={{ display: translateIndex === index ? "flex" : "none" }}
+                key={Math.random()*10000000}
               >
                 <span className={styles.day}>{date.day}</span>
                 <span className={styles.month}>{date.month}</span>

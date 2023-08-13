@@ -14,7 +14,7 @@ function page({}: Props) {
       <section className={styles.container}>
         <div className={styles.cardWrapper}>
           {featuredPosts.map((post: Post) => (
-            <BlogCard post={post} />
+            <BlogCard post={post} key={Math.random()*10000000} />
           ))}
         </div>
       </section>

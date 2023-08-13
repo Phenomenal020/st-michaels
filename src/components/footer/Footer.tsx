@@ -60,7 +60,7 @@ export default function Footer() {
               <Link href="/about">about</Link>
             </p>
             <p className={styles.linkHeader}>
-              <Link href="/welcome">founder's note</Link>
+              <Link href="/welcome">founder&apos;s note</Link>
             </p>
           </div>
 

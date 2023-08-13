@@ -8,7 +8,7 @@ const Anthem = () => {
       <div className={styles.aboutDiv}>
         <div className={styles.topImgWrapper}>
           <Image
-            src="https://images.pexels.com/photos/2305098/pexels-photo-2305098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="/images/schoolImg.jpeg"
             alt="the school"
             fill={true}
             style={{ borderRadius: "4px", objectFit: "cover" }}

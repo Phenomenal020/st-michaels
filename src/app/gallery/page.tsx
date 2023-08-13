@@ -14,7 +14,7 @@ const page = (props: Props) => {
             <div key={Math.random() * 10000} className={styles.card}>
               <div className={styles.imgWrapper}>
                 <Image
-                  src="https://images.pexels.com/photos/5621950/pexels-photo-5621950.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src="/images/gallery.jpg"
                   alt="ict centre"
                   fill={true}
                   style={{ objectFit: "cover" }}

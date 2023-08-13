@@ -77,7 +77,7 @@ export default function Navbar({}: Props) {
           {/* logo */}
           <div className={styles.logoWrapper}>
             <Image
-              src="https://www.shutterstock.com/image-vector/horse-logo-illustrations-royaltyfree-vector-600w-2314887717.jpg"
+              src="/images/logo.jpg"
               alt="logo"
               fill={true}
               className={styles.logoImage}

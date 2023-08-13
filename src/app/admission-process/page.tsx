@@ -2,6 +2,8 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "@/components/header/Header";
 
+// import admissionImg from "../../../public/images/admissionProcess.jpeg"
+
 type Props = {};
 
 function page({}: Props) {
@@ -13,7 +15,7 @@ function page({}: Props) {
           <div className={styles.processWrapper}>
             <div className={styles.right}>
               <Image
-                src="https://images.pexels.com/photos/5905918/pexels-photo-5905918.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src="/images/admissionProcess.jpeg"
                 alt="admission"
                 fill={true}
                 style={{ objectFit: "cover" }}
