@@ -28,8 +28,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5em 1em;
-  min-height: 10vh;
+  padding: 1em;
+  min-height: 5vh;
 }
 
 .navInfoWrapper {
@@ -62,16 +62,52 @@
 
 .schoolName {
   width: fit-content;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.1;
   font-weight: 600;
   color: #1d1d1d;
 }
 
 .schoolLocation {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 1.1;
   font-weight: 400;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 .linkWrapper {

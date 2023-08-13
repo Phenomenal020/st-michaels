@@ -23,7 +23,7 @@ useEffect(() => {
                 campuses: prevGlance.campuses + 0.02,
             }));
         }
-    }, 20);
+    }, 40);
 
     const foundingYearTimer = setInterval(() => {
         if (glance.foundingYear < 2017) {
@@ -32,7 +32,7 @@ useEffect(() => {
                 foundingYear: prevGlance.foundingYear + 20.17,
             }));
         }
-    }, 20); 
+    }, 40); 
 
     const classroomsTimer = setInterval(() => {
         if (glance.classrooms < 40) {
@@ -41,7 +41,7 @@ useEffect(() => {
                 classrooms: prevGlance.classrooms + 0.4,
             }));
         }
-    }, 20); 
+    }, 40); 
 
     const parentsTimer = setInterval(() => {
         if (glance.parents < 100) {
@@ -50,7 +50,7 @@ useEffect(() => {
                 parents: prevGlance.parents + 1,
             }));
         }
-    }, 20);
+    }, 40);
 
     const passRateTimer = setInterval(() => {
         if (glance.passRate < 100) {
@@ -59,7 +59,7 @@ useEffect(() => {
                 passRate: prevGlance.passRate + 10,
             }));
         }
-    }, 20); 
+    }, 40); 
 
     return () => {
         clearInterval(campusesTimer);
@@ -72,7 +72,10 @@ useEffect(() => {
   return (
     <section
       className={styles.container}
-      style={{ background: `url(${"/images/admission-process.png"})` }}
+      style={{
+        background: `url(${"/images/admission-process.png"})`,
+        backgroundSize: "cover",
+      }}
     >
       <div className={styles.backgroundImg}></div>
 

@@ -1,5 +1,6 @@
 .card {
-  min-height: 50vh;
+  /* min-height: 50vh; */
+  height: fit-content;
   margin: .5em 0em;
   background-color: #fff;
   border-top-left-radius: .5em;
@@ -15,25 +16,24 @@
 
 .imageWrapper {
   width: 100%;
-  aspect-ratio: 6/3;
+  aspect-ratio: 4/3;
   position: relative;
 }
 
 .image {
-
   object-fit: cover;
 }
 
 .bodyWrapper {
   display: flex;
   flex-direction: column;
-  padding: 10px 6px;
+  padding: .75em .4em;
   width: 95%;
-  margin: 8px auto;
+  margin: .5em auto;
 }
 
 .date {
-  font-size: 12px;
+  font-size: .75rem;
   text-transform: capitalize;
   font-weight: 600;
   display: flex;
@@ -68,3 +68,15 @@
   font-weight: 600;
   margin-top: 4px;
 }
+
+@media screen and (min-width: 481px) {
+  .imageWrapper {
+    aspect-ratio: 6/3;
+  }
+}
+
+/* @media screen and (min-width: 481px) {
+  .imageWrapper {
+    aspect-ratio: 6/3;
+  }
+} */

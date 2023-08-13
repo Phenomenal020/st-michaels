@@ -40,8 +40,7 @@ function Banner() {
         <Image
           src={image[currIndex]}
           alt="banner"
-          width={1000}
-          height={700}
+         fill={true}
           className={styles.bannerImg}
         />
       {/* forward/backward icons */}

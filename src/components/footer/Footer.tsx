@@ -69,7 +69,7 @@ export default function Footer() {
               <Link href="/admission-process">admissions</Link>
             </p>
             <p className={styles.linkHeader}>
-              <Link href="/facilities">gallery</Link>
+              <Link href="/gallery">gallery</Link>
             </p>
           </div>
 

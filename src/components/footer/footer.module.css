@@ -26,7 +26,7 @@
 .address,
 .phone,
 .email {
-  margin: 0.2em 0px;
+  margin: 0.33em 0px;
 }
 
 .siteNavWrapper {
@@ -40,6 +40,7 @@
 .info {
   display: inline-block;
   width: fit-content;
+  /* margin-bottom: .33em; */
 }
 
 .getInTouch,
@@ -47,11 +48,11 @@
   text-transform: uppercase;
   font-size: 0.9rem;
   color: #fff;
-  line-height: 1.25;
+  line-height: 1.33;
 }
 
 .linkHeader {
-  line-height: 1.25;
+  line-height: 1.33;
   text-transform: capitalize;
   margin: 0.3em 0em;
   font-weight: 400;

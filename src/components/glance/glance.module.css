@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   height: fit-content;
-  padding: 2em;
+  padding: 1em;
   position: relative;
   z-index: 2;
 }
@@ -10,6 +10,8 @@
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   z-index: -2;
@@ -18,12 +20,13 @@
 }
 
 .header {
-  font-size: 1.3rem;
+  font-size: 1.33rem;
   line-height: 1.25;
   color: #fff;
   margin-bottom: 1em;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 1em;
 }
 
 .row {
@@ -45,7 +48,7 @@
 }
 
 .iconHeader {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   line-height: 1.2;
   font-weight: bold;
   color: #fff;
@@ -60,7 +63,7 @@
 
 @media screen and (min-width: 481px) {
   .iconHeader {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   .row {
     display: grid;
@@ -69,8 +72,12 @@
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    padding: 2em;
+    margin-top: 1em;
+  }
   .iconHeader {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
   .row {
     grid-template-columns: 1fr 1fr 1fr;

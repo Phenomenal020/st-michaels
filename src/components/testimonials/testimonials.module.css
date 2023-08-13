@@ -2,7 +2,8 @@
   /* padding: 2em; */
   padding: 1em;
   width: 100%;
-  min-height: 50vh;
+  /* min-height: 50vh; */
+  height: fit-content;
   background: #1b3167e5;
 }
 /*  */
