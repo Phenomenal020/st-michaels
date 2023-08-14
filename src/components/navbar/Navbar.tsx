@@ -61,51 +61,53 @@ export default function Navbar({}: Props) {
 
   return (
     <>
-      <div className={styles.top}>
-        <span className={styles.phone}>
-          <BsFillTelephoneFill size={14} style={{ marginRight: "6px" }} />
-          08069371264
-        </span>
-        <span className={styles.email}>
-          <MdEmail size={14} style={{ marginRight: "6px" }} />{" "}
-          st.michaelthearchangelacademy@gmail.com
-        </span>
-      </div>
-
-      <nav className={styles.container}>
-        <div className={styles.navInfoWrapper}>
-          {/* logo */}
-          <div className={styles.logoWrapper}>
-            <Image
-              src="/images/logo.jpg"
-              alt="logo"
-              fill={true}
-              className={styles.logoImage}
-            />
-          </div>
-          {/* school name */}
-          <div className={styles.schoolNameWrapper}>
-            <p className={styles.schoolName}>St. michael the archangel</p>
-            <p className={styles.schoolLocation}>academy, makurdi</p>
-          </div>
+      {/* <div className={styles.sticky}> */}
+        <div className={styles.top}>
+          <span className={styles.phone}>
+            <BsFillTelephoneFill size={14} style={{ marginRight: "6px" }} />
+            08069371264
+          </span>
+          <span className={styles.email}>
+            <MdEmail size={14} style={{ marginRight: "6px" }} />{" "}
+            st.michaelthearchangelacademy@gmail.com
+          </span>
         </div>
 
-        {/* Hamburger Icon */}
-        {!isOverlayOpen && (
-          <div className={styles.hamburger} onClick={showOverlay}>
-            <FaBars size={20} className={styles.hamburgerIcon} />
+        <nav className={styles.container}>
+          <div className={styles.navInfoWrapper}>
+            {/* logo */}
+            <div className={styles.logoWrapper}>
+              <Image
+                src="/images/logo.jpg"
+                alt="logo"
+                fill={true}
+                className={styles.logoImage}
+              />
+            </div>
+            {/* school name */}
+            <div className={styles.schoolNameWrapper}>
+              <p className={styles.schoolName}>St. michael the archangel</p>
+              <p className={styles.schoolLocation}>academy, makurdi</p>
+            </div>
           </div>
-        )}
 
-        {/* nav links */}
-        <div className={styles.linkWrapper}>
-          {links.map((link) => (
-            <Link key={link.id} href={link.url} className={styles.navLink}>
-              {link.title}
-            </Link>
-          ))}
-        </div>
-      </nav>
+          {/* Hamburger Icon */}
+          {!isOverlayOpen && (
+            <div className={styles.hamburger} onClick={showOverlay}>
+              <FaBars size={20} className={styles.hamburgerIcon} />
+            </div>
+          )}
+
+          {/* nav links */}
+          <div className={styles.linkWrapper}>
+            {links.map((link) => (
+              <Link key={link.id} href={link.url} className={styles.navLink}>
+                {link.title}
+              </Link>
+            ))}
+          </div>
+        </nav>
+      {/* </div> */}
 
       {/* Overlay */}
       {isOverlayOpen && (

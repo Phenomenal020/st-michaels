@@ -6,7 +6,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import Link from "next/link";
 
 // type Props = {}
-
+// 
 export default function Footer() {
   return (
     <section className={styles.container}>

@@ -9,14 +9,14 @@ type Props = {};
 function page({}: Props) {
   return (
     <>
-      <Header text="founder's note" />
+      <Header text="Contact us" />
 
       <section className={styles.container}>
         <div className={styles.contactWrapper}>
           <div className={styles.contactDetails}>
             <div>
               <h4 className={styles.questionsHeader}>Have any Questions?</h4>
-              <p className={styles.happyText}>we are happy to hear from you</p>
+              <p className={styles.happyText}>We are happy to hear from you</p>
               <div className={styles.box}>
                 <h4 className={styles.boxHeader}>
                   <span>

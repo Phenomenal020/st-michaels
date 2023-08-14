@@ -85,6 +85,7 @@
   padding: .5em;
   font-size: 1rem;
   outline: none;
+  border: .5px solid #fff;
 }
 
 .formInput::placeholder,
