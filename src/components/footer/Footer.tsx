@@ -6,32 +6,55 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import Link from "next/link";
 
 // type Props = {}
-// 
+//
 export default function Footer() {
   return (
-    <section className={styles.container}>
+    <footer className={styles.container}>
       {/* social media wrapper */}
       <div className={styles.top}>
-        <BsTwitter
-          size={24}
-          color="#fff"
-          style={{ cursor: "pointer", marginRight: "10px" }}
-        />
-        <FaFacebookF
-          size={24}
-          color="#fff"
-          style={{ cursor: "pointer", marginRight: "10px" }}
-        />
-        <RiInstagramFill
-          size={24}
-          color="#fff"
-          style={{ cursor: "pointer", marginRight: "10px" }}
-        />
-        <IoLogoWhatsapp
-          size={24}
-          color="#fff"
-          style={{ cursor: "pointer", marginRight: "10px" }}
-        />
+        <Link
+          href="https://web.facebook.com/UofNSU/?_rdc=1&_rdr"
+          target="_blank"
+        >
+          <BsTwitter
+            size={24}
+            color="#fff"
+            style={{ cursor: "pointer", marginRight: ".5em" }}
+          />
+        </Link>
+
+        <Link
+          href="https://web.facebook.com/UofNSU/?_rdc=1&_rdr"
+          target="_blank"
+        >
+          <FaFacebookF
+            size={24}
+            color="#fff"
+            style={{ cursor: "pointer", marginRight: ".5em" }}
+          />
+        </Link>
+
+        <Link
+          href="https://web.facebook.com/UofNSU/?_rdc=1&_rdr"
+          target="_blank"
+        >
+          <RiInstagramFill
+            size={24}
+            color="#fff"
+            style={{ cursor: "pointer", marginRight: ".5em" }}
+          />
+        </Link>
+
+        <Link
+          href="https://web.facebook.com/UofNSU/?_rdc=1&_rdr"
+          target="_blank"
+        >
+          <IoLogoWhatsapp
+            size={24}
+            color="#fff"
+            style={{ cursor: "pointer", marginRight: ".5em" }}
+          />
+        </Link>
       </div>
 
       {/* get in touch */}
@@ -39,9 +62,13 @@ export default function Footer() {
         {/* Get in touch */}
         <div className={styles.contactInfo}>
           <h4 className={styles.getInTouch}>Get in touch</h4>
-          <p className={styles.address}>No. 4 Aliade Street Highlevel, Makurdi</p>
+          <p className={styles.address}>
+            No. 4 Aliade Street Highlevel, Makurdi
+          </p>
           <p className={styles.phone}>08069371264</p>
-          <p className={styles.email}>st.michaelthearchangelacademy@gmail.com</p>
+          <p className={styles.email}>
+            st.michaelthearchangelacademy@gmail.com
+          </p>
         </div>
 
         <h4 className={styles.getInTouch}>Site Navigation</h4>
@@ -103,6 +130,6 @@ export default function Footer() {
           <p>Developer : Kalu Stephen </p>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }
