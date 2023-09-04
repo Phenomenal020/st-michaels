@@ -88,6 +88,7 @@ const CalendarAlt = () => {
             ))}
           </div>
           <div className={styles.bottomIconDiv} onClick={handleMoveDown}>
+            {/* <MdArrowDropDown className={styles.icon} /> */}
             <MdArrowDropDown className={styles.icon} />
           </div>
         </div>
