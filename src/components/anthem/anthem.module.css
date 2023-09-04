@@ -33,8 +33,13 @@
 .aboutText,
 .anthemText {
   font-size: 0.9rem;
-  line-height: 1.4;
+  line-height: 1.5;
   text-justify: distribute;
+  margin-bottom: 1em;
+}
+
+.anthemText {
+  letter-spacing: .05em;
 }
 
 .leftRightWrapper {
@@ -59,9 +64,12 @@
   .aboutDiv {
     flex-direction: row;
   }
+  .parasWrapper{
+    width: 60%;
+  }
   .topImgWrapper {
-    width: 50%;
-    aspect-ratio: 8/3;
+    width: 40%;
+    aspect-ratio: 7/3;
     margin-right: 1em;
   }
 }

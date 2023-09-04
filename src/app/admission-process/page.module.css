@@ -75,10 +75,6 @@
     padding: 2em;
   }
 
-  .ul {
-    font-size: 1rem;
-  }
-
   .processWrapper {
     flex-direction: row-reverse;
     align-items: center;
@@ -86,7 +82,7 @@
 
   .right {
     width: 100%;
-    aspect-ratio: 4/3;
+    aspect-ratio: 3/3;
   }
 }
 
@@ -103,9 +99,5 @@
 
   .right {
     width: 100%;
-  }
-
-  .ul {
-    font-size: 1.25rem;
   }
 }

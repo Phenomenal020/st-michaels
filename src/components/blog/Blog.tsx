@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./blog.module.css";
 
 import { featuredPosts } from "@/data/blogData";
@@ -23,7 +25,8 @@ const BlogSection = (props: Props) => {
 
       <div className={styles.cardWrapper}>
         {topPosts.map((post: Post) => (
-          <Link href="/blog/123" key={Math.random()*1000}>
+          <Link href="/blog/123" key={Math.random() * 1000}>
+            {/* <BlogCard post={post} key={Math.random()*1000}/> */}
             <BlogCard post={post} />
           </Link>
         ))}

@@ -22,20 +22,24 @@ const About = (props: Props) => {
         </section>
         <section className={styles.rightWrapper}>
           <p className={styles.rightPara}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            tempora exercitationem eius ullam dolor nostrum aliquam quis velit,
-            et voluptate asperiores architecto fuga dolores reiciendis!
-            Sapiente, officiis voluptatum et eius molestiae esse cumque culpa
-            fugit sed voluptas voluptate, repellendus qui ad nisi minima sit
-            maiores rerum iste in animi officia.
+            Welcome to St. Michael the Archangel Academy Makurdi, proudly
+            serving the community with a commitment to nurturing young minds and
+            guiding them on their educational journey towards excellence. At our
+            esteemed institution, we believe that every step a child takes is a
+            crucial one on the path to excellence. With our dedicated staff,
+            enriching curriculum, and a supportive learning environment, we
+            empower our students to take that first step and every subsequent
+            one with confidence, enthusiasm, and a thirst for knowledge. Join us
+            in shaping a brighter future for your child as we embark together on
+            this remarkable educational adventure.
           </p>
-          <p className={styles.rightPara}>
+          {/* <p className={styles.rightPara}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
             hic vero maxime quis, fugit assumenda quaerat aliquam aliquid aut
             praesentium nam sint voluptatem asperiores veritatis doloribus est
             quasi beatae accusantium. Id, rerum libero? Architecto rem magni
             sequi atque unde incidunt.
-          </p>
+          </p> */}
 
           <button className={styles.visitBlogBtn}>
             <Link href="/welcome">learn more &rarr;</Link>

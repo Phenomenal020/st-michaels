@@ -24,8 +24,8 @@ const Mission = (props: Props) => {
           />
           <h4 className={styles.header}>our vision</h4>
           <p className={styles.columnText}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
-            eaque harum earum dolore quos impedit, sunt, obcaecati sint autem
+            To create a nurturing school community where children excel in their
+            achievements and are inspired to continue learning in the future
           </p>
         </section>
 
@@ -40,8 +40,8 @@ const Mission = (props: Props) => {
           />
           <h4 className={styles.header}>our mission</h4>
           <p className={styles.columnText}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
-            eaque harum earum dolore quos impedit, sunt, obcaecati sint autem
+            To produce children who are morally, socially and academically
+            sound.
           </p>
         </section>
 
@@ -56,8 +56,9 @@ const Mission = (props: Props) => {
           />
           <h4 className={styles.header}>our goals</h4>
           <p className={styles.columnText}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
-            eaque harum earum dolore quos impedit, sunt, obcaecati sint autem
+            To provide a nurturing and inclusive learning environment that
+            empowers students to achieve academic excellence, enhance social
+            skills, be compassionate and be creative.
           </p>
         </section>
 
@@ -72,8 +73,13 @@ const Mission = (props: Props) => {
           />
           <h4 className={styles.header}>our core values</h4>
           <p className={styles.columnText}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
-            eaque harum earum dolore quos impedit, sunt, obcaecati sint autem
+            Integrity
+            <br />
+            Empathy
+            <br />
+            Innovation
+            <br />
+            Excellence
           </p>
         </section>
       </div>

@@ -18,36 +18,62 @@ function page({}: Props) {
               style={{ borderRadius: ".25em", objectFit: "cover" }}
             />
           </div>
-          <p className={styles.welcomeText}>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quis
-            obcaecati voluptas quam molestiae illum quod praesentium impedit
-            distinctio accusantium repellat ipsum modi, sed ut ducimus
-            temporibus iste exerla? Ipsam accusantium ex nisi quidem enim
-            impedit eos vero, laboriosam tenetur repellendus hic harum
-            similique. Nemo cupiditate asperiores autem consectetur quae
-            perferendis quas reprehend magnam autem illo! Voluptas, maxime quam.
-            Perspiciatis ea commodi, doloribus eaque nostrum molestiae quia
-            earum, rerum porro nulla minima quae saepe voluptas ipsam
-            consequatur neque eos natus quo velit hic eligendi. Eos hic cumque
-            amet tempore natus exercitationem. aque nostrum molestiae quia
-            earum, rerum porro nulla minima quae saepe voluptas ipsam
-            consequatur neque eos natus quo velit hic eligendi. Eos hic cumque
-            amet tempore natus exercitationem.  
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quis
-            obcaecati voluptas quam molestiae illum quod praesentium impedit
-            distinctio accusantium repellat ipsum modi, sed ut ducimus
-            temporibus iste exerla? Ipsam accusantium ex nisi quidem enim
-            impedit eos vero, laboriosam tenetur repellendus hic harum
-            similique. Nemo cupiditate asperiores autem consectetur quae
-            perferendis quas reprehend magnam autem illo! Voluptas, maxime quam.
-            Perspiciatis ea commodi, doloribus eaque nostrum molestiae quia
-            earum, rerum porro nulla minima quae saepe voluptas ipsam
-            consequatur neque eos natus quo velit hic eligendi. Eos hic cumque
-            amet tempore natus exercitationem. aque nostrum molestiae quia
-            earum, rerum porro nulla minima quae saepe voluptas ipsam
-            consequatur neque eos natus quo velit hic eligendi. Eos hic cumque
-            amet tempore natus exercitationem.
-          </p>
+          <div className={styles.welcomeDiv}>
+            <p className={styles.welcomeText}>Dear Parents, Students, and Esteemed Guests,</p>
+
+            <p className={styles.welcomeText}>
+              It is with immense joy that we welcome you to St. Michael the
+              Archangel Academy Makurdi.
+            </p>
+
+            <p className={styles.welcomeText}>
+              Our journey began on September 10, 2018, guided by a profound
+              vision - a vision to create a school where children would not only
+              excel in their achievements but also be inspired to continue
+              learning in the future. This vision became the driving force
+              behind our mission.
+            </p>
+
+            <p className={styles.welcomeText}>
+              Our motto, "The First Step to Excellence," reminds us that every
+              journey begins with a single step. Each child who walks through
+              our doors takes that crucial first step toward a future filled
+              with limitless possibilities. Our goal is to support and guide
+              them on this journey, ensuring that they grow not only
+              academically but also as responsible, compassionate, and ethical
+              individuals.
+            </p>
+
+            <p className={styles.welcomeText}>
+              As the founders of this institution, we are humbled by the
+              dedication of our staff, the enthusiasm of our students, and the
+              unwavering support of our parents and the community. Together, we
+              have transformed a vision into a thriving reality, and I am
+              excited about the boundless potential that lies ahead.
+            </p>
+
+            <p className={styles.welcomeText}>
+              We invite you all to join us in this remarkable educational
+              adventure, where every day is an opportunity to learn, grow, and
+              aspire to greatness. Together, we shall continue to uphold the
+              values that define us, celebrate the diversity that enriches us,
+              and strive for excellence in all that we do.
+            </p>
+
+            <p className={styles.welcomeText}>
+              Thank you for entrusting us with the education and development of
+              your children. Together, we shall inspire and shape the leaders
+              and learners of tomorrow.
+            </p>
+
+            <p className={styles.welcomeText}>With warm regards,</p>
+
+            <p className={styles.welcomeText}>
+              Mr & Mrs. Ezenwaka
+              <br />
+              Founders, St. Michael the Archangel Academy Makurdi.
+            </p>
+          </div>
         </div>
 
         {/* management */}

@@ -11,7 +11,7 @@ type Props = {
 
 function BlogCard({ post }: Props) {
   return (
-    <section className={styles.card} key={Math.random() * 1000}>
+    <section className={styles.card}>
       <div className={styles.imageWrapper}>
         <Image
           className={styles.image}
@@ -27,9 +27,9 @@ function BlogCard({ post }: Props) {
         </span>
         <h4 className={styles.categoryText}>{post.header}</h4>
         <p className={styles.categorySampleText}>{post.body}</p>
-        <Link href="/blog" className={styles.more}>
+        <p className={styles.more}>
           see more
-        </Link>
+        </p>
       </div>
     </section>
   );

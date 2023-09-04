@@ -21,9 +21,14 @@
   position: relative;
 }
 
-.welcomeText {
-  font-size: 1rem;
+.welcomeDiv {
+  /* font-size: 1rem; */
   width: 100%;
+}
+
+.welcomeText {
+  font-size: .925rem;
+  margin-bottom: 1em;
   font-weight: normal;
   line-height: 1.25;
 }
@@ -44,5 +49,11 @@
   }
   .topImgWrapper {
     aspect-ratio: 3/3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .welcomeText {
+    font-size: 1rem;
   }
 }

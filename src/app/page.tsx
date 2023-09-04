@@ -8,13 +8,15 @@ import BlogSection from "@/components/blog/Blog";
 import Admission from "@/components/admission/Admission";
 import Testimonials from "@/components/testimonials/Testimonials";
 import CalendarAlt from "@/components/calendar/CalendarAlt";
+import BannerAlt from "@/components/banner/BannerAlt";
 
 type Props = {};
 
 function page({}: Props) {
   return (
     <div className={styles.container}>
-      <Banner />
+      {/* <Banner /> */}
+      <BannerAlt />
       <About />
       <Glance />
       <Admission />
@@ -24,5 +26,5 @@ function page({}: Props) {
     </div>
   );
 }
-// 
+
 export default page;

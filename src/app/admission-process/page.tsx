@@ -25,47 +25,56 @@ function page({}: Props) {
               <ul className={styles.ul}>
                 <li className={styles.li}>
                   <span>&#10148;</span>
-                  <span> Complete the online application form.</span>
-                </li>
-                <li className={styles.li}>
-                  <span>&#10148;</span>
                   <span>
-                    Submit required documents, such as birth certificate and
-                    previous academic records.
+                    <b>Visit the School:</b>Begin the admission process by
+                    visiting St. Michael the Archangel Academy in person.
                   </span>
                 </li>
                 <li className={styles.li}>
                   <span>&#10148;</span>
                   <span>
-                    Attend an admission interview with the school staff.
+                    <b> Purchase Admission Forms: </b>Obtain the necessary
+                    admission forms from the school's administrative office.
                   </span>
                 </li>
                 <li className={styles.li}>
                   <span>&#10148;</span>
                   <span>
-                    Participate in an entrance examination, if applicable.
+                    <b>Complete the Forms:</b> Fill out the admission forms
+                    accurately and thoroughly.
                   </span>
                 </li>
                 <li className={styles.li}>
                   <span>&#10148;</span>
                   <span>
-                    Pay the admission fee within the specified deadline.
+                    <b>Attach Documents:</b>Along with the completed forms,
+                    attach essential documents such as a copy of the student's
+                    birth certificate and a passport-sized photograph.
                   </span>
                 </li>
                 <li className={styles.li}>
+                  <span>&#10148;</span>
+                  <span>
+                    <b>Submit the Application:</b>Return the completed forms,
+                    along with the required documents, to the school's
+                    administrative office.
+                  </span>
+                </li>
+                <li className={styles.li}>
+                  <span>&#10148;</span>
+                  <span>
+                    <b>Interview:</b>An interview will be carried out to assess
+                    each applicant's eligibility and compatibility with the
+                    school's values and mission.
+                  </span>
+                </li>
+                {/* <li className={styles.li}>
                   <span>&#10148;</span>
                   <span>
                     Receive confirmation of admission and complete the
                     enrollment process.
                   </span>
-                </li>
-                <li className={styles.li}>
-                  <span>&#10148;</span>
-                  <span>
-                    Receive confirmation of admission and complete the
-                    enrollment process.
-                  </span>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

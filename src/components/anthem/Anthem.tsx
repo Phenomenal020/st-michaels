@@ -4,7 +4,9 @@ import styles from "./anthem.module.css";
 const Anthem = () => {
   return (
     <section>
-      <h4 className={styles.header1}><span className={styles.headerSpan}>about the school</span></h4>
+      <h4 className={styles.header1}>
+        <span className={styles.headerSpan}>about the school</span>
+      </h4>
       <div className={styles.aboutDiv}>
         <div className={styles.topImgWrapper}>
           <Image
@@ -14,54 +16,81 @@ const Anthem = () => {
             style={{ borderRadius: "4px", objectFit: "cover" }}
           />
         </div>
-        <p className={styles.aboutText}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere illo
-          maiores non animi sed, excepturi quasi officiis optio et vel. Eius
-          nobis placeat alias modi. Omnis, fugit eos alias dolor eaque ab ipsum
-          porro itaque non, corporis voluptate accusamus mollitia tenetur
-          impedit eum consequuntur perferendis perspiciatis. Animi illum eaque
-          laboriosam exercitationem quia facere necessitatibus laborum voluptas,
-          rerum quibusdam quas ipsam nemo minima, sed magnam! Aperiam officia
-          vero vitae debitis ipsum ratione aspernatur! Culpa adipisci
-          consequatur maxime facilis doloribus autem natus veniam iusto. Quidem
-          perferendis ut laboriosam quos possimus obcaecati alias eius amet
-          tempore reiciendis recusandae dolorem praesentium, dolore, dolorum
-          necessitatibus. Vero laboriosam, porro quis natus ea excepturi
-          doloremque consectetur sapiente hic voluptates laborum veritatis
-          eveniet sit autem obcaecati veniam similique quo. Libero, fugit sed
-          consequuntur a nobis totam quod temporibus ipsa, odit harum et,
-          perferendis corrupti voluptate mollitia accusamus saepe dolor maiores
-          iusto ad id fuga tempora eius culpa nemo?
-          <br />
-          rerum quibusdam quas ipsam nemo minima, sed magnam! Aperiam officia
-          vero vitae debitis ipsum ratione aspernatur! Culpa adipisci
-          consequatur maxime facilis doloribus autem natus veniam iusto. Quidem
-          perferendis ut laboriosam quos possimus obcaecati alias eius amet
-          tempore reiciendis recusandae dolorem praesentium, dolore, dolorum
-          necessitatibus. Vero laboriosam, porro quis natus ea excepturi
-          doloremque consectetur sapiente hic voluptates laborum veritatis
-          eveniet sit autem obcaecati veniam similique quo. Libero, fugit sed
-          consequuntur a nobis totam quod temporibus ipsa, odit harum et,
-          perferendis corrupti voluptate mollitia accusamus saepe dolor maiores
-          iusto ad id fuga tempora eius culpa nemo?
-        </p>
+        <div className={styles.parasWrapper}>
+          <p className={styles.aboutText}>
+            St. Michael the Archangel Academy Makurdi, a beacon of educational
+            excellence, has a remarkable history that began on September 10,
+            2018. Founded by Mr. Mathew Ezenwaka and Mrs.Stella Ezenwaka, the
+            school opened its doors with a population of 141 eager pupils,
+            housed in 10 classrooms, and supported by a dedicated team of
+            fourteen staff members.
+          </p>
+          <p className={styles.aboutText}>
+            One of the school's earliest symbols of unity and pride was its
+            anthem, a poetic masterpiece crafted by Miss Ezenwaka Augusta
+            Amarachi. This anthem, not only rich in words but deeply resonant in
+            meaning, was brought to life through the musical talents of Mr.
+            Henry Amagen, creating a melody that has been sung with heartfelt
+            enthusiasm by generations of students.
+          </p>
+          <p className={styles.aboutText}>
+            As the sun rose on that memorable first day of resumption, one name
+            etched itself into the annals of the school's history - Master
+            Onubuiyi Miracle. With a backpack filled with dreams and a heart
+            brimming with excitement, he became the very first pupil to arrive,
+            setting a precedent for the curiosity, determination, and spirit of
+            exploration that would become synonymous with St. Michael the
+            Archangel Academy, Makurdi.
+          </p>
+          <p className={styles.aboutText}>
+            From these humble beginnings, St. Michael the Archangel Academy
+            Makurdi has flourished into a nurturing institution dedicated to
+            academic excellence, character development, and a commitment to
+            shaping future generations. The school's journey is a testament to
+            the enduring vision of its founder and the unwavering dedication of
+            its staff, students, and the broader community. As it continues to
+            evolve and inspire, the school's history remains a source of pride
+            and motivation for all who walk its hallowed halls.
+          </p>
+        </div>
       </div>
 
       <div className={styles.mainWrapper}>
         <div className={styles.left}>
           <h4 className={styles.header}>national anthem</h4>
-          <p className={styles.aboutText}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Minus,placeat velit, necessitatibus porro odit rem perferendis vero
-            itaque delectus doloribus dolor sed repudiandae? Dolorem corporis
-            iure ea, repudiandae odit magnam. Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Minus,placeat velit, necessitatibus
-            porro odit rem perferendis vero itaque delectus doloribus dolor sed
-            repudiandae? Dolorem corporis iure ea, repudiandae odit magnam.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Minus,placeat velit, necessitatibus porro odit rem perferendis vero
-            itaque delectus doloribus dolor sed repudiandae? Dolorem corporis
-            iure ea, repudiandae odit magnam.
+          <p className={styles.anthemText}>
+            Arise, O compatriots
+            <br />
+            Nigeria's call obey
+            <br />
+            To serve our fatherland
+            <br />
+            With love and strength and faith
+            <br />
+            The labour of our heroes past
+            <br />
+            Shall never be in vain
+            <br />
+            To serve with heart and might
+            <br />
+            One nation bound in freedom, peace, and unity.
+          </p>
+          <p className={styles.anthemText}>
+            Oh God of creation,
+            <br />
+            Direct our noble cause
+            <br />
+            Guide our leader’s right
+            <br />
+            Help our youth the truth to know
+            <br />
+            In love and honesty to grow
+            <br />
+            And living just and true
+            <br />
+            Great lofty heights attain
+            <br />
+            To build a nation where peace and justice shall reign.
           </p>
         </div>
 

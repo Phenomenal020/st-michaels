@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./testimonials.module.css";
 import { useEffect, useState } from "react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
-//
+
+// import { collection, getDocs } from "firebase/firestore";
+// import { db } from "../../services/firebase";
+
 type Props = {};
 
 interface imageIndices {

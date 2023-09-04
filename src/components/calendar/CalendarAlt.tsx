@@ -1,49 +1,45 @@
-"use client";
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./calendaralt.module.css";
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
 
-interface CalendarInfo {
-  day: string;
-  month: string;
-  year: number;
-  header: string;
-  comment: string;
-  idx: number;
-}
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../services/firebase";
+import { CalendarInfo } from "@/types/interface";
+
+import datesData from "../../data/dates";
 
 const CalendarAlt = () => {
   const [translateIndex, setTranslateIndex] = useState<number>(0);
-  const dates: CalendarInfo[] = [
-    {
-      day: "02",
-      month: "jan",
-      year: 2023,
-      header: "resumption",
-      comment:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium fugit accusantium veniam! first",
-      idx: 1,
-    },
-    {
-      day: "19",
-      month: "feb",
-      year: 2024,
-      header: "resumption",
-      comment:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium fugit accusantium veniam! second",
-      idx: 1,
-    },
-    {
-      day: "29",
-      month: "dec",
-      year: 2023,
-      header: "resumption",
-      comment:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium fugit accusantium veniam last",
-      idx: 1,
-    },
-  ];
+  // const [dates, setDates] = useState<CalendarInfo[]>([]);
+  const [dates, setDates] = useState<CalendarInfo[]>(datesData);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const querySnapshot = await getDocs(collection(db, "calendar"));
+  //       const fetchedDates: CalendarInfo[] = [];
+
+  //       querySnapshot.forEach((doc) => {
+  //         const data = doc.data();
+  //         const calendarInfo: CalendarInfo = {
+  //           day: data.day,
+  //           month: data.month,
+  //           year: data.year,
+  //           header: data.header,
+  //           comment: data.comment,
+  //           idx: data.idx,
+  //         };
+  //         fetchedDates.push(calendarInfo);
+  //       });
+
+  //       setDates(fetchedDates);
+  //     } catch (error) {
+  //       console.error("Error fetching data:", error);
+  //     }
+  //   };
+
+  //   fetchData();
+  // }, []);
 
   const handleMoveUp = () => {
     if (translateIndex < dates.length - 1) {
@@ -66,10 +62,10 @@ const CalendarAlt = () => {
           {dates.map((date: CalendarInfo, index) => (
             <div
               className={styles.left}
-              key={Math.random() * 1000}
+              key={date.idx}
               style={{ top: `${100 * (index - translateIndex)}%` }}
             >
-              <h4 className={styles.header}>header</h4>
+              <h4 className={styles.header}>{date.header}</h4>
               <p className={styles.comment}>{date.comment}</p>
             </div>
           ))}
@@ -83,7 +79,7 @@ const CalendarAlt = () => {
               <div
                 className={styles.midToggle}
                 style={{ display: translateIndex === index ? "flex" : "none" }}
-                key={Math.random()*10000000}
+                key={date.idx}
               >
                 <span className={styles.day}>{date.day}</span>
                 <span className={styles.month}>{date.month}</span>
@@ -99,6 +95,5 @@ const CalendarAlt = () => {
     </div>
   );
 };
-//
 
 export default CalendarAlt;
