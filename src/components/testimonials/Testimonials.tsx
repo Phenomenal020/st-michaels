@@ -76,7 +76,7 @@ const Testimonials = (props: Props) => {
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  });
 
   // console.log(position);
 

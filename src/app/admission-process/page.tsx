@@ -34,7 +34,8 @@ function page({}: Props) {
                   <span>&#10148;</span>
                   <span>
                     <b> Purchase Admission Forms: </b>Obtain the necessary
-                    admission forms from the school's administrative office.
+                    admission form&apos;s from the school&apos;s administrative
+                    office.
                   </span>
                 </li>
                 <li className={styles.li}>
@@ -48,7 +49,7 @@ function page({}: Props) {
                   <span>&#10148;</span>
                   <span>
                     <b>Attach Documents:</b>Along with the completed forms,
-                    attach essential documents such as a copy of the student's
+                    attach essential documents such as a copy of the student&apos;s
                     birth certificate and a passport-sized photograph.
                   </span>
                 </li>
@@ -56,7 +57,7 @@ function page({}: Props) {
                   <span>&#10148;</span>
                   <span>
                     <b>Submit the Application:</b>Return the completed forms,
-                    along with the required documents, to the school's
+                    along with the required documents, to the school&apos;s
                     administrative office.
                   </span>
                 </li>
@@ -64,8 +65,8 @@ function page({}: Props) {
                   <span>&#10148;</span>
                   <span>
                     <b>Interview:</b>An interview will be carried out to assess
-                    each applicant's eligibility and compatibility with the
-                    school's values and mission.
+                    each applicant&apos;s eligibility and compatibility with the
+                    school&apos;s values and mission.
                   </span>
                 </li>
                 {/* <li className={styles.li}>

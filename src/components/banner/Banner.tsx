@@ -34,7 +34,7 @@ function Banner() {
       >
         {images.map((image) => {
           return (
-            <section className={styles.banner}>
+            <section className={styles.banner} key={Math.random()*100000}>
               <Image
                 src={image.source}
                 alt="banner"

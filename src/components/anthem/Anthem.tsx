@@ -26,7 +26,7 @@ const Anthem = () => {
             fourteen staff members.
           </p>
           <p className={styles.aboutText}>
-            One of the school's earliest symbols of unity and pride was its
+            One of the school&apos;s earliest symbols of unity and pride was its
             anthem, a poetic masterpiece crafted by Miss Ezenwaka Augusta
             Amarachi. This anthem, not only rich in words but deeply resonant in
             meaning, was brought to life through the musical talents of Mr.
@@ -35,7 +35,7 @@ const Anthem = () => {
           </p>
           <p className={styles.aboutText}>
             As the sun rose on that memorable first day of resumption, one name
-            etched itself into the annals of the school's history - Master
+            etched itself into the annals of the school&apos;s history - Master
             Onubuiyi Miracle. With a backpack filled with dreams and a heart
             brimming with excitement, he became the very first pupil to arrive,
             setting a precedent for the curiosity, determination, and spirit of
@@ -46,10 +46,10 @@ const Anthem = () => {
             From these humble beginnings, St. Michael the Archangel Academy
             Makurdi has flourished into a nurturing institution dedicated to
             academic excellence, character development, and a commitment to
-            shaping future generations. The school's journey is a testament to
+            shaping future generations. The school&apos;s journey is a testament to
             the enduring vision of its founder and the unwavering dedication of
             its staff, students, and the broader community. As it continues to
-            evolve and inspire, the school's history remains a source of pride
+            evolve and inspire, the school&apos;s history remains a source of pride
             and motivation for all who walk its hallowed halls.
           </p>
         </div>
@@ -61,7 +61,7 @@ const Anthem = () => {
           <p className={styles.anthemText}>
             Arise, O compatriots
             <br />
-            Nigeria's call obey
+            Nigeria&apos;s call obey
             <br />
             To serve our fatherland
             <br />
@@ -80,7 +80,7 @@ const Anthem = () => {
             <br />
             Direct our noble cause
             <br />
-            Guide our leader’s right
+            Guide our leader&apos;s right
             <br />
             Help our youth the truth to know
             <br />

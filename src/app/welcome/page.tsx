@@ -35,7 +35,7 @@ function page({}: Props) {
             </p>
 
             <p className={styles.welcomeText}>
-              Our motto, "The First Step to Excellence," reminds us that every
+              Our motto, &quot;The First Step to Excellence,&quot; reminds us that every
               journey begins with a single step. Each child who walks through
               our doors takes that crucial first step toward a future filled
               with limitless possibilities. Our goal is to support and guide
