@@ -37,6 +37,7 @@
   height: 100%;
   overflow-y: auto;
   transform: translateY(0);
+  transition: all 0.5s ease-in;
   /* padding: .5em; */
 }
 
@@ -111,7 +112,17 @@
   align-items: center;
   color: #fff;
   font-weight: 600;
-  /* padding: .25em; */
+  animation: opacity 1.5s ease-in-out; /* Add a transition for the opacity property */
+}
+
+/* Add a class to trigger the fade-in animation */
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .midToggle {

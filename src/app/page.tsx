@@ -9,6 +9,7 @@ import Admission from "@/components/admission/Admission";
 import Testimonials from "@/components/testimonials/Testimonials";
 import CalendarAlt from "@/components/calendar/CalendarAlt";
 import BannerAlt from "@/components/banner/BannerAlt";
+import BannerTest from "@/components/banner/BannerTest";
 
 type Props = {};
 
@@ -17,6 +18,7 @@ function page({}: Props) {
     <div className={styles.container}>
       {/* <Banner /> */}
       <BannerAlt />
+      {/* <BannerTest /> */}
       <About />
       <Glance />
       <Admission />
