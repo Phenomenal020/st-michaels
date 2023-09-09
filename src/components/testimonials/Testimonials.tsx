@@ -117,7 +117,7 @@ const Testimonials = (props: Props) => {
       >
         {testimonials.map((testimonial: testimonial) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={Math.random()*1000000}>
               <div className={styles.wrapper}>
                 <div className={styles.topDiv}>
                   <FaQuoteLeft
