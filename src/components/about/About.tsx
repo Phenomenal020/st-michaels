@@ -14,7 +14,7 @@ const About = (props: Props) => {
       <div className={styles.wrapper}>
         <section className={styles.leftWrapper}>
           <Image
-            src="/images/welcomeImg.jpeg"
+            src="/images/welcome-image.jpg"
             alt="welcome"
             fill={true}
             className={styles.missionImage}

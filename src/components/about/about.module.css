@@ -1,7 +1,7 @@
 .container {
   background-color: #f9f9f9;
   width: 100%;
-  min-height: 40vh;
+  /* min-height: 40vh; */
   height: fit-content;
   z-index: 1000;
   padding: 1em;
@@ -39,9 +39,9 @@
 
 .rightPara {
   margin: 0.5em 0em;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: normal;
-  line-height: 1.4;
+  line-height: 1.6;
   text-align: justify;
   text-justify: distribute-all-lines;
 }
@@ -68,18 +68,21 @@
 }
 
 @media screen and (min-width: 481px) {
-  .leftWrapper {
-    aspect-ratio: 6/3;
+  .rightPara {
+    font-size: .925rem;
   }
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 600px) {
   .leftWrapper {
-    aspect-ratio: 7/3;
+    aspect-ratio: 2/1;
+  }
+  .rightPara {
+    font-size: 1rem;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   .container {
     /* min-height: 40vh; */
     height: fit-content;

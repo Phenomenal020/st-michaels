@@ -46,11 +46,11 @@ const Anthem = () => {
             From these humble beginnings, St. Michael the Archangel Academy
             Makurdi has flourished into a nurturing institution dedicated to
             academic excellence, character development, and a commitment to
-            shaping future generations. The school&apos;s journey is a testament to
-            the enduring vision of its founder and the unwavering dedication of
-            its staff, students, and the broader community. As it continues to
-            evolve and inspire, the school&apos;s history remains a source of pride
-            and motivation for all who walk its hallowed halls.
+            shaping future generations. The school&apos;s journey is a testament
+            to the enduring vision of its founder and the unwavering dedication
+            of its staff, students, and the broader community. As it continues
+            to evolve and inspire, the school&apos;s history remains a source of
+            pride and motivation for all who walk its hallowed halls.
           </p>
         </div>
       </div>
@@ -97,17 +97,28 @@ const Anthem = () => {
         <div className={styles.right}>
           <h4 className={styles.header}>our anthem</h4>
           <p className={styles.anthemText}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Minus,placeat velit, necessitatibus porro odit rem perferendis vero
-            itaque delectus doloribus dolor sed repudiandae? Dolorem corporis
-            iure ea, repudiandae odit magnam. Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Minus,placeat velit, necessitatibus
-            porro odit rem perferendis vero itaque delectus doloribus dolor sed
-            repudiandae? Dolorem corporis iure ea, repudiandae odit magnam.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Minus,placeat velit, necessitatibus porro odit rem perferendis vero
-            itaque delectus doloribus dolor sed repudiandae? Dolorem corporis
-            iure ea, repudiandae odit magnam.
+            Beloved St.Michael,
+            <br /> The Patron of St.Michael the Archangel Academy, <br />
+            Protect our dear school, <br /> We humbly pray (We humbly pray)
+            <br />
+            <br />
+            We are Michaelites, First Step to Excellence.
+            <br />
+            We shall be our Parents' pride.
+            <br />
+            We shall work hard to be the best (to be the best)
+            <br />
+            <br />
+            Grant us Lord with St.Michael,
+            <br />
+            To fight against the Prince of Pride <br />
+            So we may be rewarded
+            <br />
+            With a Crown of Excellence. (Excellence)
+            <br />
+            So we may be rewarded
+            <br />
+            With a Crown of Excellence.
           </p>
         </div>
       </div>

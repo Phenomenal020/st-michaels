@@ -33,34 +33,33 @@ const Testimonials = (props: Props) => {
 
   const testimonials: testimonial[] = [
     {
-      left: "/images/testimonial001.jpeg",
-      main: "/images/testimonial002.jpg",
-      right: "/images/testimonial003.jpeg",
+      left: "/images/testimonial004.jpeg",
+      main: "/images/testimonial-001.jpg",
+      right: "/images/testimonial-002.jpg",
       comment:
-        "The teachers at this school are amazing! They truly care about each student's success. The teachers at this school are amazing! They truly care about each student's success. The teachers at this school are amazing! They truly care about each student's success.",
-      role: "Mathematics teacher",
-      name: "Amarachi Ezenwaka",
+        "I have great confidence in SMAA. My son started reading and writing in Nursery 2. I can recommend the School to whoever wants qualitative and excellent Education for their children any day.",
+      role: "Parent",
+      name: "Jude Nyagba",
     },
     {
-      left: "/images/testimonial002.jpg",
-      main: "/images/testimonial003.jpeg",
-      right: "/images/testimonial004.jpeg",
+      left: "/images/testimonial-001.jpg",
+      main: "/images/testimonial-002.jpg",
+      right: "/images/testimonial-003.jpg",
       comment:
-        "I love the friendly and inclusive atmosphere of this school. I feel safe and supported here. I love the friendly and inclusive atmosphere of this school. I feel safe and supported here. I love the friendly and inclusive atmosphere of this school. I feel safe and supported here",
-      role: "English teacher",
-      name: "Kalu Stephen Eke",
+        "I am super proud to be a staff of this great school. The curriculum is second to none and each child is treated with care. The management team is awesome, they make sure that the staff are given good training for the job by organising workshops and training sessions.",
+      role: "Teacher",
+      name: "Terwase Ngufan Jessica",
     },
     {
-      left: "/images/testimonial003.jpeg",
-      main: "/images/testimonial004.jpeg",
+      left: "/images/testimonial-002.jpg",
+      main: "/images/testimonial-003.jpg",
       right: "/images/testimonial005.jpeg",
-      comment:
-        "The school provides a nurturing environment that fosters both academic and personal growth.",
+      comment: "SMAAM offers you so many opportunities growth. Workshops/Seminars by Certified teachers are organised at the beginning of every Session. Incentives are given to both staff and students at intervals as a form of encouragement. Overall, it is a fun place to work in",
       role: "Parent",
       name: "Joy Amadi",
     },
     {
-      left: "/images/testimonial004.jpeg",
+      left: "/images/testimonial-003.jpg",
       main: "/images/testimonial005.jpeg",
       right: "/images/testimonial006.jpeg",
       comment:
@@ -71,7 +70,7 @@ const Testimonials = (props: Props) => {
     {
       left: "/images/testimonial005.jpeg",
       main: "/images/testimonial006.jpeg",
-      right: "/images/testimonial001.jpeg",
+      right: "/images/testimonial004.jpeg",
       comment:
         "The school provides a nurturing environment that fosters both academic and personal growth.",
       role: "Receptionist",
@@ -79,8 +78,8 @@ const Testimonials = (props: Props) => {
     },
     {
       left: "/images/testimonial006.jpeg",
-      main: "/images/testimonial001.jpeg",
-      right: "/images/testimonial002.jpg",
+      main: "/images/testimonial004.jpeg",
+      right: "/images/testimonial-001.jpg",
       comment:
         "I love the friendly and inclusive atmosphere of this school. I feel safe and supported here. I love the friendly and inclusive atmosphere of this school. I feel safe and supported here. I love the friendly and inclusive atmosphere of this school. I feel safe and supported here. I love the friendly and inclusive atmosphere of this school. I feel safe and supported here.",
       role: "Head Boy",
@@ -117,7 +116,7 @@ const Testimonials = (props: Props) => {
       >
         {testimonials.map((testimonial: testimonial) => {
           return (
-            <SwiperSlide key={Math.random()*1000000}>
+            <SwiperSlide key={Math.random() * 1000000}>
               <div className={styles.wrapper}>
                 <div className={styles.topDiv}>
                   <FaQuoteLeft

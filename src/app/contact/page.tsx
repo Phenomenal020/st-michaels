@@ -25,9 +25,9 @@ function page({}: Props) {
                   <b style={{ marginLeft: ".25em" }}>address</b>
                 </h4>
                 <p className={styles.boxField}>
-                  No. 4 Aliade Street Highlevel, Makurdi. Short description from
-                  nearest bus-stop. Lorem ipsum dolor sit, amet consectetur
-                  adipisicing elit. Neque, delectus.
+                  Address: No.4 Aliade Street Highlevel , Makurdi Benue State,
+                  Nigeria. Opposite Bishop Murray medical centre Highlevel
+                  Makurdi.
                 </p>
               </div>
               <div className={styles.box}>
@@ -38,7 +38,7 @@ function page({}: Props) {
                   <b style={{ marginLeft: ".25em" }}>email</b>
                 </h4>
                 <p className={styles.boxField}>
-                  st-michaels-the-archAngel@gmail.com
+                  St.michaelthearchangelacademymakurdi2@gmail.com
                 </p>
               </div>
               <div className={styles.box}>
@@ -48,7 +48,9 @@ function page({}: Props) {
                   </span>
                   <b style={{ marginLeft: "4px" }}>phone number</b>
                 </h4>
-                <p className={styles.boxField}>+234(0)81 3598 6754</p>
+                <p className={styles.boxField}>
+                  +234 (0) 806 9371 264, +234 (0) 704 4362 422
+                </p>
               </div>
             </div>
             <div>
@@ -111,7 +113,6 @@ function page({}: Props) {
           </div>
         </div>
       </section>
-
     </>
   );
 }

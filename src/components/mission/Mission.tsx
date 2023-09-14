@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "./mission.module.css";
-import { ReactElement } from "react";
-// import { BsFillEyeFill } from "react-icons/bs";
+
 import missionImg from "../../../public/icons/ourMission.png";
 import visionImg from "../../../public/icons/ourVision.png";
 import goalsImg from "../../../public/icons/ourGoals.png";

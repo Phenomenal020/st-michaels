@@ -112,13 +112,13 @@
   align-items: center;
   color: #fff;
   font-weight: 600;
-  animation: opacity 1.5s ease-in-out; /* Add a transition for the opacity property */
+  animation: opacity 1.2s ease-in-out; /* Add a transition for the opacity property */
 }
 
 /* Add a class to trigger the fade-in animation */
 @keyframes opacity {
   0% {
-    opacity: 0;
+    opacity: 0.1;
   }
   100% {
     opacity: 1;
