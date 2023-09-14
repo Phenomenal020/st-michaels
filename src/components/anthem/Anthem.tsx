@@ -104,7 +104,7 @@ const Anthem = () => {
             <br />
             We are Michaelites, First Step to Excellence.
             <br />
-            We shall be our Parents' pride.
+            We shall be our Parents`&apos;` pride.
             <br />
             We shall work hard to be the best (to be the best)
             <br />
