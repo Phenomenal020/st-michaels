@@ -13,14 +13,16 @@ function page({}: Props) {
       <section className={styles.container}>
         <div className={styles.wrapper}>
           <div className={styles.processWrapper}>
+
             <div className={styles.right}>
               <Image
                 src="/images/admission-process-page.jpg"
                 alt="admission"
                 fill={true}
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "cover", float: "right" }}
               />
             </div>
+
             <div className={styles.left}>
               <ul className={styles.ul}>
                 <li className={styles.li}>

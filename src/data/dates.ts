@@ -17,7 +17,7 @@ const dates: CalendarInfo[] = [
       header: "resumption",
       comment:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium fugit accusantium veniam! second",
-      idx: 1,
+      idx: 2,
     },
     {
       day: "29",
@@ -26,7 +26,7 @@ const dates: CalendarInfo[] = [
       header: "resumption",
       comment:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium fugit accusantium veniam last",
-      idx: 1,
+      idx: 3,
     },
   ];
 

@@ -1,12 +1,14 @@
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Rubik } from "next/font/google";
+
 // import Script from "next/script";
 // import "bootstrap/dist/css/bootstrap.css";
 
-const inter = Inter({
+const rubik = Rubik({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   display: "swap",
 });
 
@@ -22,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body className={inter.className}>
+      <body className={rubik.className}>
       {/* <body> */}
         <div className="main-container">
           <Navbar />

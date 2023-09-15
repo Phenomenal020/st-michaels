@@ -13,6 +13,7 @@ const CalendarAlt = () => {
   // const [dates, setDates] = useState<CalendarInfo[]>([]);
   const [dates, setDates] = useState<CalendarInfo[]>(datesData);
 
+  console.log("translateIndex", translateIndex);
   // useEffect(() => {
   //   const fetchData = async () => {
   //     try {
@@ -41,13 +42,13 @@ const CalendarAlt = () => {
   //   fetchData();
   // }, []);
 
-  const handleMoveUp = () => {
-    if (translateIndex < dates.length - 1) {
+  const handleMoveDown = () => {
+    if (translateIndex < dates.length - 1 || translateIndex === 0) {
       setTranslateIndex((prevIndex) => prevIndex + 1);
     } else setTranslateIndex(0);
   };
 
-  const handleMoveDown = () => {
+  const handleMoveUp = () => {
     if (translateIndex > 0) {
       setTranslateIndex((prevIndex) => prevIndex - 1);
     } else setTranslateIndex(dates.length - 1);

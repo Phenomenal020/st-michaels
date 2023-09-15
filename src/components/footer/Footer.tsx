@@ -13,7 +13,7 @@ export default function Footer() {
       {/* social media wrapper */}
       <div className={styles.top}>
         <Link
-          href="https://web.facebook.com/UofNSU/?_rdc=1&_rdr"
+          href="https://www.facebook.com/profile.php?id=100075831671661"
           target="_blank"
         >
           <BsTwitter
@@ -24,7 +24,7 @@ export default function Footer() {
         </Link>
 
         <Link
-          href="https://web.facebook.com/UofNSU/?_rdc=1&_rdr"
+          href="https://www.facebook.com/profile.php?id=100075831671661"
           target="_blank"
         >
           <FaFacebookF
@@ -35,7 +35,7 @@ export default function Footer() {
         </Link>
 
         <Link
-          href="https://web.facebook.com/UofNSU/?_rdc=1&_rdr"
+          href="https://wa.me/message/VPY42GHRUKNZC1"
           target="_blank"
         >
           <RiInstagramFill
@@ -46,7 +46,7 @@ export default function Footer() {
         </Link>
 
         <Link
-          href="https://web.facebook.com/UofNSU/?_rdc=1&_rdr"
+          href="https://wa.me/message/VPY42GHRUKNZC1"
           target="_blank"
         >
           <IoLogoWhatsapp

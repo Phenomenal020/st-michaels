@@ -80,8 +80,7 @@
 .schoolLocation {
   font-size: 0.875rem;
   line-height: 1.1;
-  font-weight: 400
-
+  font-weight: 400;
 }
 
 .linkWrapper {
@@ -91,19 +90,53 @@
   display: none;
 }
 
-.navLink {
-  text-decoration: none;
+.navList {
   color: #1d1d1d;
   font-size: 0.875em;
   line-height: 1.4;
-  transition: all 0.3s ease;
   width: fit-content;
   padding: 0.3em;
+}
+
+.navLink {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
 }
 
 .navLink:hover {
   color: #1b3167;
   transform: scale(1.1);
+}
+
+/* ----------------- dropdown -------------------- */
+.dropdownWrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* .navList:hover .dropdownMenu {
+  display: block;
+} */
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  box-shadow: 0px 0.25em 0.25em rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  list-style: none;
+  padding: .5em 0.75em;
+  margin: 0;
+  width: max-content
+
+}
+
+.dropdownMenu li {
+  padding: 0.5rem 1rem;
 }
 
 /* ------------------ overlay -------------------- */
@@ -114,14 +147,14 @@
   top: 0;
   bottom: 0;
   width: 100%;
-  max-width: 300px;
+  max-width: 240px;
   background-color: black;
   z-index: 100;
   padding: 1em;
   padding-left: 2em;
   font-size: 1.125rem;
   justify-content: flex-end;
-  font-family: Inter, "sans-serif";
+  /* font-family: Inter, "sans-serif"; */
 }
 
 .closeIcon {

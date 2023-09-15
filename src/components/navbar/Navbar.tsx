@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaAngleDown, FaAngleUp } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 
 type Props = {};
@@ -25,7 +25,7 @@ const links: LinkInterface[] = [
   },
   {
     id: 2,
-    title: "Welcome",
+    title: "Founder's Note",
     url: "/welcome",
   },
   {
@@ -47,10 +47,7 @@ const links: LinkInterface[] = [
 
 export default function Navbar({}: Props) {
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
-
-  // const toggleOverlay = () => {
-  //   setIsOverlayOpen((prev: boolean) => !prev);
-  // };
+  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
 
   const showOverlay = () => {
     setIsOverlayOpen(true);
@@ -58,6 +55,20 @@ export default function Navbar({}: Props) {
 
   const hideOverlay = () => {
     setIsOverlayOpen(false);
+  };
+
+  const showAboutDropdown = () => {
+    setIsAboutDropdownOpen((prev) => true);
+  };
+
+  const hideAboutDropdown = () => {
+    setIsAboutDropdownOpen((prev) => false);
+  };
+
+  // Define animations
+  const dropdownVariants = {
+    open: { opacity: 1, y: 0 },
+    closed: { opacity: 0, y: -10 },
   };
 
   return (
@@ -100,13 +111,73 @@ export default function Navbar({}: Props) {
         )}
 
         {/* nav links */}
-        <div className={styles.linkWrapper}>
-          {links.map((link) => (
-            <Link key={link.id} href={link.url} className={styles.navLink}>
-              {link.title}
+        <ul className={styles.linkWrapper}>
+          <li className={styles.navList}>
+            <Link href="/" className={styles.navLink}>
+              Home
             </Link>
-          ))}
-        </div>
+          </li>
+          <li
+            className={styles.navList}
+            onMouseOver={showAboutDropdown}
+            onMouseOut={hideAboutDropdown}
+          >
+            <div className={styles.dropdownWrapper}>
+              <span className={styles.navLink}>
+                About
+                {isAboutDropdownOpen ? (
+                  <FaAngleUp style={{ marginLeft: ".25em" }} />
+                ) : (
+                  <FaAngleDown style={{ marginLeft: ".25em" }} />
+                )}
+              </span>
+              {isAboutDropdownOpen && (
+                <motion.ul
+                  className={styles.dropdownMenu}
+                  variants={dropdownVariants}
+                  initial="closed"
+                  animate="open"
+                  exit="closed"
+                  transition={{ duration: 0.33 }}
+                >
+                  <motion.li
+                    className={styles.navList}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <Link href="/about" className={styles.navLink}>
+                      The School
+                    </Link>
+                  </motion.li>
+                  <motion.li
+                    className={styles.navList}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <Link href="/welcome" className={styles.navLink}>
+                      Founder&apos;s Note
+                    </Link>
+                  </motion.li>
+                </motion.ul>
+              )}
+            </div>
+          </li>
+          <li className={styles.navList}>
+            <Link href="/admission-process" className={styles.navLink}>
+              Admissions
+            </Link>
+          </li>
+          <li className={styles.navList}>
+            <Link href="/blog" className={styles.navLink}>
+              News/Blog
+            </Link>
+          </li>
+          <li className={styles.navList}>
+            <Link href="/contact" className={styles.navLink}>
+              Contact Us
+            </Link>
+          </li>
+        </ul>
       </nav>
       {/* </div> */}
 

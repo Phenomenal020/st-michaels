@@ -11,7 +11,7 @@
 
 .aboutDiv {
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   display: flex;
   flex-direction: column;
   margin-top: 0.33em;

@@ -9,12 +9,17 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: Inter, "sans-serif";
+  /* font-family: Inter, "sans-serif"; */
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
 }
 
 /* @media screen and (min-width: 1200px) {
