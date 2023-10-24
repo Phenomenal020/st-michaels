@@ -1,0 +1,71 @@
+/* styles/Login.module.css */
+.LoginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
+  min-height: 50vh;
+  margin-top: 1.5em;
+  font-size: 1rem;
+}
+
+.LoginForm {
+  border: 1px solid #ccc;
+  padding: 1.25em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 1.5em auto;
+}
+
+.loginInput {
+  width: 100%;
+  margin-bottom: 0.75em;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 0.25em;
+}
+
+.loginBtn {
+  width: 100%;
+  padding: 0.75em;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+.orDivider {
+  display: flex;
+  align-items: center;
+  margin: 0.75em 0;
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 0.75em;
+}
+
+.error {
+  margin: 0.5em auto;
+  width: 100%;
+  color: red;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* styles/SupabaseLoginButton.module.css */
+.googleLoginBtn {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 0.25em;
+  padding: 0.75em;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 0.75em;
+}

@@ -22,7 +22,16 @@ export interface CalendarInfo {
   day: string;
   month: string;
   year: number;
-  header: string;
+  title: string;
   comment: string;
   idx: number;
+}
+
+export interface bannerInfo {
+  title: string;
+  subtitle: string;
+  buttonText: string;
+  link: string;
+  imageSrc: string;
+  index: 1 | 2 | 0;
 }

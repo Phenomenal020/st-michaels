@@ -1,3 +1,5 @@
+import { useRouter } from "next/navigation"
+
 import styles from "./calendar.module.css";
 
 interface CalendarInfo {
@@ -7,7 +9,24 @@ interface CalendarInfo {
   comment: string;
 }
 
-const Calendar = () => {
+const Calendar = async () => {
+  const router = useRouter();
+
+  const res = await fetch("http://localhost:3000/api/tickets", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(["hello"]),
+  });
+
+  const json = await res.json();
+  if (json.error) {
+    console.log(json.error.message);
+  }
+  if (json.data) {
+    router.refresh();
+    console.log(json.data);
+  }
+
   const dates: CalendarInfo[] = [
     {
       day: "02",

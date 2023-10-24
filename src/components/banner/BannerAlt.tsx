@@ -1,21 +1,42 @@
-"use client";
-
 import Image from "next/image";
 import styles from "./banneralt.module.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { bannerInfo } from "@/types/interface";
+import Link from "next/link";
 
 function BannerAlt() {
-  const images = [
-    "/images/banner001.jpg",
-    "/images/banner002.jpg",
-    "/images/banner003.jpg"
-  ];
+  const [bannerHeaders, setBannerHeaders] = useState<bannerInfo[]>([
+    {
+      title: "First Step to Excellence",
+      subtitle: "The best choice for your lovely kids",
+      buttonText: "Learn more",
+      link: "/about",
+      imageSrc: "/images/banner001.jpg",
+      index: 0,
+    },
+    {
+      title: "School Admissions Now Open",
+      subtitle: "The best choice for your lovely kids",
+      buttonText: "Register Now",
+      link: "/admission-process",
+      imageSrc: "/images/banner002.jpg",
+      index: 1,
+    },
+    {
+      title: "First Step to Excellence",
+      subtitle: "The best choice for your lovely kids",
+      buttonText: "Learn more",
+      link: "/about",
+      imageSrc: "/images/banner003.jpg",
+      index: 2,
+    },
+  ]);
 
   const [currIndex, setCurrIndex] = useState<number>(0);
   const [nextIndex, setNextIndex] = useState<number | null>(null);
 
   const handleLeft = () => {
-    const newIndex = (currIndex - 1 + images.length) % images.length;
+    const newIndex = (currIndex - 1 + bannerHeaders.length) % bannerHeaders.length;
     setNextIndex(newIndex);
     setTimeout(() => {
       setCurrIndex(newIndex);
@@ -24,7 +45,7 @@ function BannerAlt() {
   };
 
   const handleRight = () => {
-    const newIndex = (currIndex + 1) % images.length;
+    const newIndex = (currIndex + 1) % bannerHeaders.length;
     setNextIndex(newIndex);
     setTimeout(() => {
       setCurrIndex(newIndex);
@@ -32,27 +53,30 @@ function BannerAlt() {
     }, 500); // Delay to allow fade-out transition
   };
 
-  const handleIndicatorClick = (index: number) => {
-    setNextIndex(index);
-    setTimeout(() => {
-      setCurrIndex(index);
-      setNextIndex(null);
-    }, 5000);
-  };
-
   return (
     <div className={styles.container}>
       <section className={styles.banner}>
-        {images.map((image, index) => (
-          <Image
-            key={index}
-            src={image}
-            alt="banner"
-            fill={true}
-            className={`${styles.bannerImg} ${
-              index === currIndex ? styles.active : ""
-            } ${index === nextIndex ? styles.next : ""}`}
-          />
+        {bannerHeaders.map((image) => (
+          <div
+            key={image.index}
+            className={`${styles.bannerDiv} ${
+              image.index === currIndex ? styles.active : ""
+            } ${image.index === nextIndex ? styles.next : ""}`}
+          >
+            <Image
+              src={image.imageSrc}
+              alt="banner"
+              fill={true}
+              className={styles.bannerImg}
+            />
+            <div className={styles.infoDiv}>
+              <h2 className={styles.title}>{image.title}</h2>
+              <p className={styles.subtitle}>{image.subtitle}</p>
+              <button className={styles.visitBlogBtn}>
+                <Link href={image.link}>{image.buttonText}</Link>
+              </button>
+            </div>
+          </div>
         ))}
         <div className={styles.left} onClick={handleLeft}>
           &lsaquo;

@@ -3,7 +3,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -13,9 +12,6 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
 import styles from "./testimonials.module.css";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
-
-// import { collection, getDocs } from "firebase/firestore";
-// import { db } from "../../services/firebase";
 
 type Props = {};
 
@@ -33,7 +29,7 @@ const Testimonials = (props: Props) => {
 
   const testimonials: testimonial[] = [
     {
-      left: "/images/testimonial004.jpeg",
+      left: "/images/testimonial-004.jpg",
       main: "/images/testimonial-001.jpg",
       right: "/images/testimonial-002.jpg",
       comment:
@@ -53,37 +49,19 @@ const Testimonials = (props: Props) => {
     {
       left: "/images/testimonial-002.jpg",
       main: "/images/testimonial-003.jpg",
-      right: "/images/testimonial005.jpeg",
+      right: "/images/testimonial-004.jpg",
       comment: "SMAAM offers you so many opportunities growth. Workshops/Seminars by Certified teachers are organised at the beginning of every Session. Incentives are given to both staff and students at intervals as a form of encouragement. Overall, it is a fun place to work in",
       role: "Parent",
       name: "Joy Amadi",
     },
     {
       left: "/images/testimonial-003.jpg",
-      main: "/images/testimonial005.jpeg",
-      right: "/images/testimonial006.jpeg",
+      main: "/images/testimonial-004.jpg",
+      right: "/images/testimonial-001.jpeg",
       comment:
-        "I love the friendly and inclusive atmosphere of this school. I feel safe and supported here. I love the friendly and inclusive atmosphere of this school. I feel safe and supported here. I love the friendly and inclusive atmosphere of this school. I feel safe and supported here.",
-      role: "Student",
-      name: "Peace Gentle",
-    },
-    {
-      left: "/images/testimonial005.jpeg",
-      main: "/images/testimonial006.jpeg",
-      right: "/images/testimonial004.jpeg",
-      comment:
-        "The school provides a nurturing environment that fosters both academic and personal growth.",
-      role: "Receptionist",
-      name: "Ada Precious",
-    },
-    {
-      left: "/images/testimonial006.jpeg",
-      main: "/images/testimonial004.jpeg",
-      right: "/images/testimonial-001.jpg",
-      comment:
-        "I love the friendly and inclusive atmosphere of this school. I feel safe and supported here. I love the friendly and inclusive atmosphere of this school. I feel safe and supported here. I love the friendly and inclusive atmosphere of this school. I feel safe and supported here. I love the friendly and inclusive atmosphere of this school. I feel safe and supported here.",
-      role: "Head Boy",
-      name: "Emmanuel James",
+        "I celebrate you great TEACHERS of ST MICHAEL THE ARCHANGEL.  Your impactful knowledge is highly recognized and appreciated. Remain blessed.",
+      role: "Parent",
+      name: "Okigbo James",
     },
   ];
 

@@ -1,0 +1,28 @@
+/* VerifyEmailPage.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    min-height: 50vh;
+    text-align: center;
+  }
+  
+  .h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+  }
+  
+  .p {
+    font-size: 1.125rem;
+    margin-bottom: 1.5em;
+  }
+  
+  .verifyLink {
+    font-size: 1.125rem;
+    text-decoration: underline;
+    color: #007bff;
+    cursor: pointer;
+  }
+  

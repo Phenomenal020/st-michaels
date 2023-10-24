@@ -1,0 +1,19 @@
+.contentEditable {
+    height: 200px;
+    width: 90%;
+    padding: 2em;
+    border-radius: 1px solid #ddd;
+    position: relative;
+    margin: 1em auto;
+}
+
+.placeHolder {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+.phenomenalBold {
+    /* font-weight: 300;
+    color: green; */
+}

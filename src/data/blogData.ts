@@ -9,7 +9,7 @@ export const featuredPosts: Post[] = [
   {
     imgSrc: "/images/teachersDay.jpg",
     date: "december 21, 2022",
-    header: "Teachers’ Day Celebration",
+    header: "Nourishing Body and Mind: Fruit Day Tradition",
     body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores eos soluta sit obcaecati doloremque? Non assumenda provident molestiae iusto sint itaque nihil debitis tempora perspiciatis dolore exercitationem aliquid sunt, iure laudantium odit beatae quas a quidem doloremque vitae doloribus ipsa!",
   },
   {

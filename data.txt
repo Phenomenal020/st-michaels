@@ -1,0 +1,9 @@
+Banner 1: 
+First Step to Excellence (In Bold)
+The best choice for your lovely kids(smaller letters)
+
+Button (Learn more) ---> Leads to About page
+
+Banner 2:
+School Admissions Now Open 
+Button (Register Now)--> Leads to Admissions page
